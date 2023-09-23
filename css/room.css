@@ -1,0 +1,53 @@
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.form_card{
+    width: 50%;
+    border: 1px solid rgb(194, 194, 194);
+    padding: 50px 20px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+form input, select{
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid teal;
+    padding: 10px;
+    background: rgb(231, 231, 231);
+}
+
+button{
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 80%;
+}

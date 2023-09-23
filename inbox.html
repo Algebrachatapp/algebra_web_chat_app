@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" >
+		<meta name="author" content="Matija_Grilec" >
+		<meta name="description" content="Web chat application for basics conversation."  >
+		<meta name="keywords" content="chat, app, scaledrone">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="stylesheet" href="css/global.css" >
+		<title>Inbox</title>
+		<link rel="stylesheet" href="css/inbox.css" >
+	</head>
+	<body>
+		<div id="loading-page" class="loading">
+			<h1>Joining...</h1>
+		</div>
+		<main class="loaded">
+			<div class="main">
+				<div class="inbox-header">
+					<h2>Chat Room: <span class="room-name"></span></h2>
+					<button onclick="handleLeave()">leave room</button>
+				</div>
+
+				<div class="messages-body">
+					<div id="chatMessages" class="chatMessages"></div>
+				</div>
+
+				<div class="inbox-footer">
+					<form id="send">
+						<input name="text" type="text" required placeholder="Type your message">
+						<button type="submit">Send</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<div id="error" class="error">
+			<h1>Error: Something went wrong with scaledrone</h1>
+		</div>
+	</body>
+
+	<script
+		src="https://cdn.scaledrone.com/scaledrone-lite.min.js"
+		type="text/javascript"
+	></script>
+	<script src="js/inbox.js"></script>
+</html>
